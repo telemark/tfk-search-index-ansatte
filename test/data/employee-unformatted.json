@@ -1,0 +1,16 @@
+{
+  "personId": "6477",
+  "givenName": "Gibbe Glunt",
+  "familyName": "Glam",
+  "email": "gibbe.glunt.glam@t-fk.no",
+  "mobilePhone": "12345678",
+  "workPhone": "98765432",
+  "positions": [
+    {
+      "departmentId": "3401",
+      "info": "Rådgiver",
+      "type": "Fast ansatt",
+      "departmentName": "Team kommunikasjon"
+    }
+  ]
+}
