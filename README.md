@@ -14,6 +14,12 @@ Build
 $ docker build -t tfk-search-index-ansatte .
 ```
 
+or use the prebuilt image from [hub.docker.com](https://hub.docker.com/r/telemark/tfk-search-index-ansatte/)
+
+```sh
+$ docker pull telemark/tfk-search-index-ansatte
+```
+
 Run a container
 
 ```sh
