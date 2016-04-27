@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index-ansatte",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Index employees in elasticsearch",
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.2"
+    "node": ">=4.4.3"
   },
   "scripts": {
     "start": "node index.js",
