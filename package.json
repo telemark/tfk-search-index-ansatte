@@ -35,7 +35,7 @@
   "devDependencies": {
     "coveralls": "2.11.15",
     "standard": "8.6.0",
-    "tap": "10.0.0"
+    "tap": "10.0.2"
   },
   "dependencies": {
     "jsonwebtoken": "7.2.1",
