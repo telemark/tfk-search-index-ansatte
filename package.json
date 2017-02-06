@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index-ansatte",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Index employees in elasticsearch",
   "license": "MIT",
   "author": {
