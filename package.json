@@ -1,6 +1,6 @@
 {
   "name": "tfk-search-index-ansatte",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Index employees in elasticsearch",
   "license": "MIT",
   "private": true,
@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "axios": "0.16.2",
-    "jsonwebtoken": "^8.1.0"
+    "jsonwebtoken": "8.1.0"
   }
 }

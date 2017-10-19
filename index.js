@@ -10,7 +10,8 @@ async function indexAnsatte () {
   const msg = await deleteIndex
   console.log(msg)
   const { data } = axios.get(config.SOURCE_URL)
-  const jobs = data.results.map(addIndex(repackEmployee))
+  const employees = data.results.map(repackEmployee)
+  const jobs = employees.map(addIndex)
   await Promise.all(jobs)
   console.log('Finished indexing')
   process.exit(0)
