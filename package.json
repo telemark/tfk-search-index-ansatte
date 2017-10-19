@@ -1,8 +1,9 @@
 {
   "name": "tfk-search-index-ansatte",
-  "version": "1.0.17",
+  "version": "2.0.0",
   "description": "Index employees in elasticsearch",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -10,14 +11,15 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.3"
+    "node": ">=8.7.0"
   },
   "scripts": {
     "start": "node index.js",
-    "test": "standard && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "test-offline": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "Search",
@@ -27,18 +29,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/tfk-search-index-ansatte.git"
+    "url": "git+https://github.com/telemark/tfk-search-index-ansatte.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/tfk-search-index-ansatte/issues"
+    "url": "https://github.com/telemark/tfk-search-index-ansatte/issues"
   },
+  "homepage": "https://github.com/telemark/tfk-search-index-ansatte",
   "devDependencies": {
-    "tap": "10.3.1",
-    "standard": "10.0.1",
-    "coveralls": "2.12.0",
+    "coveralls": "3.0.0",
+    "nsp": "2.8.1",
+    "standard": "10.0.3",
+    "tap": "10.7.2"
   },
   "dependencies": {
-    "jsonwebtoken": "7.3.0",
-    "wreck": "11.0.0"
+    "axios": "0.16.2",
+    "jsonwebtoken": "^8.1.0"
   }
 }

@@ -1,11 +1,5 @@
-###########################################################
-#
-# Dockerfile for tfk-search-index-ansatte
-#
-###########################################################
-
-# Setting the base to nodejs 4.4.3
-FROM mhart/alpine-node:4.4.3
+# Setting the base to nodejs 8.7.0
+FROM node:8.7.0-alpine
 
 # Maintainer
 MAINTAINER Geir Gåsodden
