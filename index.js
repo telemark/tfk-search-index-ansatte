@@ -9,8 +9,9 @@ const repackEmployee = require('./lib/repack-employee')
 async function indexAnsatte () {
   const msg = await deleteIndex
   console.log(msg)
-  const { data } = axios.get(config.SOURCE_URL)
+  const { data } = await axios.get(config.SOURCE_URL)
   const employees = data.results.map(repackEmployee)
+  console.log(employees.length)
   const jobs = employees.map(addIndex)
   await Promise.all(jobs)
   console.log('Finished indexing')
