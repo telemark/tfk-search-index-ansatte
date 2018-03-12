@@ -1,7 +1,5 @@
-'use strict'
-
-var tap = require('tap')
-var generateToken = require('../lib/generate-token')
+const tap = require('tap')
+const generateToken = require('../lib/generate-token')
 
 tap.throws(
   function () {
