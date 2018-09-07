@@ -43,7 +43,7 @@ async function indexAnsatte () {
         fail++
         logger('error', ['index', 'indexAnsatte', error])
       }
-      sleep(500)
+      await sleep(100)
       await next()
     }
   }
