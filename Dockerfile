@@ -1,4 +1,3 @@
-# Setting the base to nodejs 8.10.0
 FROM node:10.9.0-alpine
 
 #### Begin setup ####
@@ -16,4 +15,4 @@ WORKDIR "/src"
 RUN npm install --production
 
 # Startup
-ENTRYPOINT node index
+ENTRYPOINT node index.js
