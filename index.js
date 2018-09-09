@@ -1,6 +1,5 @@
 const axios = require('axios')
 const path = require('path')
-const sleep = require('then-sleep')
 const addIndex = require('./lib/add-index')
 const deleteIndex = require('./lib/delete-index')
 const repackEmployee = require('./lib/repack-employee')
@@ -43,7 +42,6 @@ async function indexAnsatte () {
         fail++
         logger('error', ['index', 'indexAnsatte', error])
       }
-      await sleep(100)
       await next()
     }
   }
